@@ -151,3 +151,15 @@ You will learn how to:
 * Create reusable layouts
 * Structure your app like a real-world project
 * Separate UI from routing logic
+
+Next topics:
+
+- Dynamic Routes
+- useNavigate
+- 404 / errorElement
+- loader (data fetching)
+- action (forms)
+- protected routes
+- lazy loading
+- query params
+- advanced patterns
