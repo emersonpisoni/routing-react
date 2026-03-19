@@ -24,7 +24,9 @@ export default function App() {
         <NavLink to="/services" style={linkStyle}>
           Services
         </NavLink>
-        <NavLink to="/dashboard" style={linkStyle}>Dashboard</NavLink>
+        <NavLink to="/dashboard" style={linkStyle}>
+          Dashboard
+        </NavLink>
       </nav>
       <Outlet />
     </div>
