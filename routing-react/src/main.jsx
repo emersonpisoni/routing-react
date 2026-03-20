@@ -10,6 +10,10 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import Services from "./pages/services";
 import "./index.css";
+import DashboardLayout from "./components/dashboard-layout";
+import Dashboard from "./pages/dashboard";
+import Users from "./pages/users";
+import Settings from "./pages/settings";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +24,15 @@ const router = createBrowserRouter([
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact /> },
       { path: "services", element: <Services /> },
+      {
+        path: "dashboard",
+        element: <DashboardLayout />,
+        children: [
+          { index: true, element: <Dashboard /> },
+          { path: "users", element: <Users /> },
+          { path: "settings", element: <Settings /> },
+        ],
+      },
     ],
   },
 ]);
